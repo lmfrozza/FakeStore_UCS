@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    /*justify-content: space-between*/;
+    align-items: center;
+    background-color: #f0f0f0;
+
+    top: 0;
+    width: 100%;
+    
+    border: 5px solid purple;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-container img {
+    height: 50px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    border: 5px solid blue;
+}
