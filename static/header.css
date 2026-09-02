@@ -1,22 +1,33 @@
-header {
-    display: flex;
-    /*justify-content: space-between*/;
-    align-items: center;
-    background-color: #f0f0f0;
-
+header{
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    
-    border: 5px solid purple;
+    padding: 20px 100px;
+    background: linear-gradient(to right, rgb(75, 1, 88), rgb(45, 1, 88));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
 }
 
 header .logo-container {
-    display: flex;
-    align-items: center;
+    font-size: 1em;
+    color: #fff;
+    user-select: none;
+    display:flex;
 }
 
 header .logo-container img {
     height: 50px;
+    background: #fff;
+    border-radius: 30%;
+}
+
+header .logo-container h1 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0 10px;
 }
 
 header nav {
@@ -25,4 +36,8 @@ header nav {
     gap: 5px;
 
     border: 5px solid blue;
+}
+
+header nav img {
+    cursor: pointer;
 }
