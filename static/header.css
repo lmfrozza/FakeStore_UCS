@@ -3,12 +3,12 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px;
     background: linear-gradient(to right, rgb(75, 1, 88), rgb(45, 1, 88));
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    z-index: 99;
+    justify-content: center;
+    gap: 60%;
 }
 
 header .logo-container {
@@ -33,11 +33,36 @@ header .logo-container h1 {
 header nav {
     display: flex;
     align-items: center;
-    gap: 5px;
-
-    border: 5px solid blue;
+    gap: 15%;
 }
 
 header nav img {
     cursor: pointer;
+    height: 25px;
+    padding: 2px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+header nav button{
+    color: #4b0158;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px 30px;
+    border-radius: 10%;
+    cursor: pointer;
+
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+
+    transition: 
+        background-color 0.25s ease,
+        box-shadow 0.25s ease
+}
+
+header nav button:hover{
+    color:#380042;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
 }
