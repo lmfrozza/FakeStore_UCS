@@ -4,30 +4,48 @@ header{
     left: 0;
     width: 100%;
     padding: 20px;
-    background: linear-gradient(to right, rgb(75, 1, 88), rgb(45, 1, 88));
+    /*background: linear-gradient(to right, var(--secondary), var(--primary));*/
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 60%;
 }
+header:hover{
+    background: var(--primary-transparent);
+    transition: background 0.5s ease;
+}
+
 
 header .logo-container {
     font-size: 1em;
     color: #fff;
+    padding: 10px;
     user-select: none;
-    display:flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--primary);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(18, 88, 194, 0.2);
 }
 
 header .logo-container img {
     height: 50px;
+    width: auto;
     background: #fff;
     border-radius: 30%;
+    display: block;
 }
 
 header .logo-container h1 {
+    margin: 0;
+    line-height: 1;
     text-align: center;
     font-size: 1.5em;
     padding: 0 10px;
+    display: flex;
+    align-items: center;
 }
 
 header nav {
@@ -46,8 +64,8 @@ header nav img {
 }
 
 header nav button{
-    color: #4b0158;
-    background: rgba(255, 255, 255, 0.5);
+    color: var(--background);
+    background: var(--primary);
     padding: 10px 30px;
     border-radius: 10%;
     cursor: pointer;
@@ -62,7 +80,7 @@ header nav button{
 }
 
 header nav button:hover{
-    color:#380042;
+    color: var(--primary);
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
 }
