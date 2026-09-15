@@ -9,11 +9,15 @@
 
 .produto-imagem {
   margin: 0;
+  height: 500px;        
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .produto-imagem img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;    
   border-radius: 8px;
   display: block;
 }
@@ -21,6 +25,10 @@
 .produto-info {
   display: flex;
   flex-direction: column;
+  background-color: var(--background);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 15px 15px 25px #000000;
 }
 
 .produto-nome {
