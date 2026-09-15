@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias</title>
+    <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/header.css">
     <link rel="stylesheet" href="/static/category.css">
 </head>
+
 <body>
     <header>
         <div class="logo-container">
@@ -19,26 +22,32 @@
         </nav>
     </header>
     <main>
-        <section class="categoria">
-        <h2>Jogos online!</h2>
-        <div class="vitrine">
-            <article class="card">
-                    <figure class="card-imagem" style="background-color:#eef2ff;">🎧</figure>
-                    <div class="card-conteudo">
-                        <span class="tag">Áudio</span>
-                        <h3 class="card-titulo">Fone Bluetooth X200</h3>
-                        <p class="card-descricao">Cancelamento de ruído ativo e 30h de bateria...</p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="preco">R$ 349,90<span>à vista</span></div>
-                        <button class="btn-comprar">Comprar</button>
-                    </div>
-            </article>
-        </div>
+        <link rel="stylesheet" href="/static/home.css">
+        <section class="categories">
+            <a href="/games" class="category games">
+                <span>GAMES</span>
+                <span>→</span>
+            </a>
+
+            <a href="/consoles" class="category consoles">
+                <span>CONSOLES</span>
+                <span>→</span>
+            </a>
+
+            <a href="/pc" class="category pc">
+                <span>PC GAMING</span>
+                <span>→</span>
+            </a>
+
+            <a href="/peripherals" class="category peripherals">
+                <span>PERIFÉRICOS</span>
+                <span>→</span>
+            </a>
         </section>
     </main>
     <footer>
         <p>fazer hoje com o Lucca</p>
     </footer>
 </body>
+
 </html>

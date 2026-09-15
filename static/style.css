@@ -2,4 +2,10 @@
     --primary: #1258c2;
     --secondary: #1258c259;
     --background: #fdfdfd;
+    --primary-transparent: rgba(18, 88, 194, 0.5);
+}
+
+body {
+    background: url("../assets/Background.png") no-repeat center center fixed;
+    background-size: cover;
 }
