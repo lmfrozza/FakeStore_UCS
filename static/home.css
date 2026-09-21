@@ -37,15 +37,17 @@ main {
     text-decoration: none;
 
     overflow: hidden;
+    
 
     transition:
         transform 200ms ease,
-        box-shadow 200ms ease;
+        box-shadow 200ms ease,
+        background-size 4000ms ease;
 }
 
 .category:hover {
     transform: translateY(-4px);
-
+    background-size: 120%;
     box-shadow:
         0 15px 40px rgba(18, 88, 194, 0.15);
 }
@@ -56,20 +58,32 @@ main {
 
 .playstation {
     grid-column: 1 / 3;
-    background: url("../assets/playstation.png")
+    background: url("../assets/playstation.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .xbox {
     grid-column: 3 / 5;
-    background: url("../assets/xbox.png")
+    background: url("../assets/xbox.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .switch {
     grid-column: 1 / 2;
-    background: url("../assets/switch.png")
+    background: url("../assets/switch.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .pc {
     grid-column: 2 / 5;
-    background: url("../assets/steam.png")
+    background: url("../assets/steam.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
