@@ -3,6 +3,8 @@
     --secondary: #1258c259;
     --background: #fdfdfd;
     --primary-transparent: rgba(18, 88, 194, 0.5);
+    --header-height: 110px;
+    --main-header-gap: 0px;
 }
 
 body {
@@ -19,7 +21,10 @@ html, body {
 }
 
 main {
-    flex: 1;
+    flex: 0 0 auto;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-top: calc(var(--header-height) + var(--main-header-gap));
     position: relative;
 
     display: flex;

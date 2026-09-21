@@ -1,14 +1,6 @@
-main {
-    position: relative;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
 .categories {
-    position: fixed;
-    top: 25%;
+    position: relative;
     display: grid;
 
     grid-template-columns: 2fr 1fr 1fr 2fr;
@@ -17,7 +9,7 @@ main {
     gap: 16px;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 25vh auto 0;
 }
 
 .category {
