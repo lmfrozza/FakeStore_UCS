@@ -1,12 +1,21 @@
+main {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 .categories {
-    padding-top: 110px;
+    position: fixed;
+    top: 25%;
     display: grid;
 
     grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-template-rows: 180px 180px;
 
     gap: 16px;
-
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -41,18 +50,26 @@
         0 15px 40px rgba(18, 88, 194, 0.15);
 }
 
-.games {
-    grid-column: 1 / 3;
+.category h2 {
+    color: #ffffff
 }
 
-.consoles {
+.playstation {
+    grid-column: 1 / 3;
+    background: url("../assets/playstation.png")
+}
+
+.xbox {
     grid-column: 3 / 5;
+    background: url("../assets/xbox.png")
+}
+
+.switch {
+    grid-column: 1 / 2;
+    background: url("../assets/switch.png")
 }
 
 .pc {
-    grid-column: 1 / 2;
-}
-
-.peripherals {
     grid-column: 2 / 5;
+    background: url("../assets/steam.png")
 }
