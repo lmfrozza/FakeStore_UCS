@@ -85,3 +85,31 @@ header nav button:hover{
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
 }
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+  header {
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px;
+  }
+
+  header .logo-container img {
+    height: 36px;
+  }
+
+  header .logo-container h1 {
+    font-size: 1em;
+    padding: 0;
+  }
+
+  header nav {
+    gap: 10px;
+  }
+
+  header nav button {
+    padding: 8px 16px;
+  }
+}

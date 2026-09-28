@@ -57,3 +57,16 @@
 .btn-comprar:hover {
   background-color: #2c56d1;
 }
+
+/* Responsividade */
+
+/* Tablets e celulares*/
+@media (max-width: 800px) {
+  .detalhe-produto {
+    grid-template-columns: 1fr;
+  }
+
+  .produto-imagem {
+    height: 300px;
+  }
+}

@@ -152,3 +152,19 @@
   height: 150px;
   margin: 0;
 }
+
+/* Responsividade */
+
+/* Tablets:*/
+@media (max-width: 900px) {
+  .vitrine {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Celulares: */
+@media (max-width: 550px) {
+  .vitrine {
+    grid-template-columns: 1fr;
+  }
+}

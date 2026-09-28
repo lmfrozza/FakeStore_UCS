@@ -88,3 +88,20 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* Responsividade */
+
+/* Tablets e celulares: */
+@media (max-width: 900px) {
+  .categories {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 140px);
+    box-sizing: border-box;
+    padding: 0 16px;
+    margin: 15vh auto 0;
+  }
+
+  .category {
+    grid-column: 1 / -1;
+  }
+}
